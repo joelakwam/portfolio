@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Eregae Akwam | Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">
+            <a href="#"
+              ><span id="font-color__blue">A</span>kwam<span
+                id="font-color__red"
+                >.</span
+              ></a
+            >
+          </h1>
+
+          <button
+            id="open-side-navigation-button"
+            onclick="openSideNavigationMenu()"
+          >
+            menu
+          </button>
+
+          <ul id="navigation-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-services">My Services</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li>
+              <button
+                id="close-side-navigation-button"
+                onclick="closeSideNavigationMenu()"
+              >
+                close
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-text">
+          <p>Software Developer & Data Scientist</p>
+          <h1>Hi, I'm <span>Eregae</span><br />Akwam from Kenya.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME SECTION -->
+    <div id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="about-me-col-1">
+            <img src="./assets/images/IMG_4419.JPG" alt="Eregae Akwam" />
+          </div>
+
+          <div class="about-me-col-2">
+            <h1 class="sub-title">About Me.</h1>
+            <p>
+              I am a coding bootcamp graduate of Moringa School located in
+              Nairobi - Kenya where I acquired Android Development skills using
+              Java and Android Studio respectively. I am profecient in various
+              Web Development frameworks such as Django, Node.js, Express JS and
+              Angular. Also, I have experience in working with databases such as
+              MySQL, SQLite, MongoDB, Firebase and lastly, PostgresQL.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />HTML5, CSS3, JavaScript,
+                  jQuery, Bootstrap, Angular, Django, Node.js & Flask.
+                </li>
+                <li>
+                  <span>Software Development</span><br />Java, Kotlin, Python,
+                  JavaScript, Git, Gradle & Dart.
+                </li>
+                <li>
+                  <span>Data Science & Machine Learning</span><br />Pandas,
+                  NumPy, Matplotlib, Seaborn, Sci-kit Learn.
+                </li>
+                <li>
+                  <span>Database Management</span><br />MySQL, NoSQL, MongoDB,
+                  Firebase & PostgresQL.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2019 - 2020</span><br />Software Developer at Innovex
+                  Solutions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019 - 2019</span><br />Moringa Prep at Moringa School.
+                </li>
+                <li>
+                  <span>2019 - 2020</span><br />Moringa Core I & Core II at Moringa
+                  School.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MY SERVICES SECTION -->
+    <div id="my-services">
+      <div class="container">
+        <h1 class="sub-title">My Services.</h1>
+        <div class="my-services-list">
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Django,
+              Node.js & Flask.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <h2>Mobile App Development</h2>
+            <p>Flutter & Android Studio.</p>
+            <a href="https://www.github.com/joelakwam">Learn More</a>
+          </div>
+
+          <div>
+            <h2>Software Development</h2>
+            <p>Java, Kotlin, Python, JavaScript, Git, Gradle & Dart.</p>
+            <a href="https://www.github.com/joelakwam">Learn More</a>
+          </div>
+
+          <div>
+            <h2>Database Management</h2>
+            <p>MySQL, NoSQL, MongoDB, Firebase & PostgresQL.</p>
+            <a href="https://www.github.com/joelakwam">Learn More</a>
+          </div>
+
+          <div>
+            <h2>Data Science & Machine Learning</h2>
+            <p>Pandas, NumPy, Matplotlib, Seaborn, Sci-kit Learn.</p>
+            <a href="https://www.github.com/joelakwam">Learn More</a>
+          </div>
+
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>Adobe & Figma.</p>
+            <a href="https://www.github.com/joelakwam">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT ME SECTION -->
+    <div id="contact-me">
+      <div class="container">
+        <div class="row">
+          <div class="contact-me-left">
+            <h1 class="sub-title">Contact Me.</h1>
+            <p>eregae.akwam@gmail.com</p>
+            <p>(+254) 768 822 624</p>
+            <p>Nakuru, Kenya.</p>
+            <p>Postal Code - 20100</p>
+
+            <div class="social-media-icons">
+              <a href="facebook.com/joelakwam"
+                ><img src="./assets/icons/fb-icon.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/icons/linkedin-icon.png" alt="LinkedIn"
+              /></a>
+              <a href="twitter.com/its_akwam"
+                ><img src="./assets/icons/twitter-icon.png" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="./assets/icons/instagram-icon.png" alt="Instagram"
+              /></a>
+            </div>
+
+            <a href="" download id="download-cv-button">Download CV</a>
+          </div>
+
+          <div class="contact-me-right">
+            <form action="" method="post">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="What's Your Name?"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email?"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="What Do You Want To Tell Me?"
+                required
+              ></textarea>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
